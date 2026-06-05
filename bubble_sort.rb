@@ -5,10 +5,11 @@ def bubble_sort(array)
     ((array.size - 1) - pass).times do |i|
       if array[i] > array[i.succ]
         array[i], array[i.succ] = array[i.succ], array[i]
-        p array
       end
     end
   end
+  p array
+  return array
 end
 
 bubble_sort(array_to_sort)
