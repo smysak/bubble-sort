@@ -12,4 +12,9 @@ def bubble_sort!(array)
   return array
 end
 
-bubble_sort!(array_to_sort)
+def bubble_sort(array)
+  copied_array = array.dup
+  bubble_sort!(copied_array)
+end
+
+bubble_sort(array_to_sort)
